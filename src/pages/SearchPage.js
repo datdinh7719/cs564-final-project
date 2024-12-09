@@ -89,7 +89,7 @@ function SearchPage() {
 
     return (
       <div>
-        <div className="mb-3">
+        <div className="my-3">
           <p>
             Showing {(page + 1) * resultsPerPage - resultsPerPage + 1} to{" "}
             {Math.min((page + 1) * resultsPerPage, totalResults)} of{" "}
@@ -134,7 +134,7 @@ function SearchPage() {
           })}
         </Row>
         {/* Pagination Controls */}
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center my-3 py-3">
           <Pagination>
             <Pagination.First
               onClick={() => handlePagination(1)}
